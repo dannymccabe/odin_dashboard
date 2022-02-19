@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.outer-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 150px 200px;
+    background-color: pink;
+    height: 100vh;
+    padding: 1rem;
+}
+.top-list{
+    grid-column: 2/3;
+}
+
+.bottom-list{
+    grid-column: 2/3;
+}
+
+.inner-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 1rem;
+    border: 5px solid rgb(57, 25, 202);
+}
+/* .navbar-top{
+    display: grid;
+    grid-template-rows: 1fr;
+    border: 3px solid rgb(21, 161, 196);
+}
+.navbar-bottom{
+    display: grid;
+    grid-template-rows: 1fr;
+    border: 3px solid rgb(153, 35, 35);
+} */
+
+main{
+    grid-column: 2/3;
+    grid-row:2/3;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.projects-container{
+    grid-column: 1/2;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    border: 2px solid goldenrod;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.announcements{
+    border: 1px solid black;
+    grid-column: 2/3;
+}
+
+.trending{
+    border: 1px solid black;
+    grid-column: 2/3;
+}
