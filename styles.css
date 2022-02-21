@@ -26,6 +26,15 @@
     grid-column: 2/3;
 }
 
+.search-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bottom{
+    display: flex;
+}
+
 .content{
     background-color: rgb(219, 248, 219);
     display: grid;
