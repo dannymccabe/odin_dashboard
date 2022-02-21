@@ -20,6 +20,16 @@
     grid-row:1/3;
 }
 
+.top-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.top-list{
+    grid-column: 1/2;
+}
+
 .search-section{
     background-color: gray;
     grid-row: 1/2;
