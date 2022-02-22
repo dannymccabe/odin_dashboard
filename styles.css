@@ -1,3 +1,4 @@
+/* Establishing colour palet */
 :root{
     --white: #fff1f2;
     --mid-white: #ffe4e6;
@@ -9,8 +10,13 @@
     --mid-red: #be123c;
     --mid-dark-red: #9f1239;
     --dark-red: #881337;
+    --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+    --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+    --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+    --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
 }
 
+/* basic presets */
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +26,7 @@
     text-decoration: none;
 }
 
+/* Making the nav and header fixed on the screen */
 .outside{
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -27,6 +34,8 @@
     height: 100vh;
     position: fixed;
 }
+
+/* Start of nav styling*/
 
 .sidebar{
     height: 100vh;
@@ -84,12 +93,24 @@
     color: white;
 }
 
+/* Start of header or search section styling*/
 .search-section{
     background-color:var(--mid-white);
     display: grid;
     grid-template-rows: 1fr 1fr;
     z-index: 8;
     padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 3rem;
+}
+.search-bottom .profile-pic{
+    height: 75px;
+    width: 75px;
+
 }
 
 .search-top ul{
@@ -107,7 +128,7 @@
 
 .search-bottom{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-betweeen;
     align-items: center;
 }
 
@@ -117,6 +138,16 @@
     align-items: center;
 }
 
+.search-section button{
+    background-color: var(--dark-red);
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    color: var(--white);
+    border-style: none;
+    border-radius: 1rem;
+}
+
+/* Overriding the fixed positioning to allow content to overflow and scroll*/
 .content{
     background-color: var(--light-pink);
     display: grid;
@@ -126,6 +157,7 @@
     overflow: scroll;
 }
 
+/* Start of overflow content styling*/
 .projects{
     background-color: var(--light-pink);
     grid-column: 1/2;
@@ -155,7 +187,6 @@
 }
 
 .trending{
-
     grid-row: 2/3;
 }
 
@@ -166,10 +197,20 @@
     margin: 2rem;
 }
 
+.p-photo{
+    border-radius: 3rem;
+    
+}
+
 .card{
     border-left: 10px solid var(--light-mid-red);
     padding: 15px;
     background-color: var(--white);
     margin: 2rem;
     border-radius: 1rem;
+}
+
+.card li{
+    display: inline-block;
+    padding: 1rem;
 }
