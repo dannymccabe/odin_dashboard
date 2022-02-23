@@ -33,9 +33,11 @@
 
         <div class="search-section">
             <header class="search-top">
-                <ul>
+                <ul class="search">
                     <li><span class="material-icons">search</span></li>
-                    <li> <input type="text" class="search-bar"></li>
+                    <li> <input type="text" class="search-bar" placeholder="Search"></li>
+                </ul>
+                <ul class="account">
                     <li><span class="material-icons">notifications</span></li>
                     <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg" class="profile-pic"></li>
                     <li class="name">Morgan Oakley</li>
@@ -43,16 +45,20 @@
             </header>
 
             <header class="search-bottom">
-                <ul>
-                    <div class="profile-section">
-                        <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg" class="profile-pic"></li>
-                        <li class="greeting">Hi there,</li>
-                        <li class="username">Morgan Oakley (@morgan)</li>
+                    <div class="profile">
+                      <div class="picture"> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg" class="profile-photo"></div>
+                      <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">
+                          Morgan Oakley <span class="username">(@morgan)</span>
+                        </p>
+                      </div>
                     </div>
-                    <li><button>New</button></li>
-                    <li><button>Upload</button></li>
-                    <li><button>Share</button></li>
-                </ul>
+                    <div class="buttons">
+                      <button class="btn">New</button>
+                      <button class="btn">Upload</button>
+                      <button class="btn">Share</button>
+                    </div>
             </header>
         </div>
 

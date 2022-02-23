@@ -159,3 +159,78 @@ main{
     justify-self: center;
     text-align: center;
 }
+
+/* header previous css starts here */
+.search-section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.search-top ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.search-bottom ul{
+    grid-row: 2/3;
+}
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+.search-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bottom .profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bottom .profile-pic{
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bottom .greeting{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+}
+
+.search-bottom .username{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.search-bottom button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
